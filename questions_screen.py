@@ -193,7 +193,6 @@ class question_screen(ctk.CTk):
         response = messagebox.askyesno(title = "Confirm",message = "Are you sure you want to exit?")
         if response:
             self.navigate_frame("questions","userchoice")
-        if self.timer_id:
             self.timer_label.after_cancel(self.timer_id)
             self.timer_id = None
 
